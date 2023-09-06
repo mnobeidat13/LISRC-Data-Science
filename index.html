@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Syllabus</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="navbar.css">
+  <script src="navbar.js"></script>
+  <script>
+  // JavaScript function to toggle the visibility of sections
+  function toggleSection(sectionId) {
+      var section = document.getElementById(sectionId);
+      if (section.style.display === "none" || section.style.display === "") {
+      section.style.display = "block";
+      } else {
+      section.style.display = "none";
+      }
+  }
+  </script>
+
+</head>
+<body>
+<script>
+    document.body.append(createNavbar())
+</script>
+
+<h1>Data Science and Machine Learning Course Syllabus</h1>
+
+<h2 onclick="toggleSection('section1')">1. Data Science and Machine Learning Theory<span>+</span></h2>
+<ul id="section1">
+
+    <li>Statistics as the Foundation</li>
+    <li>Probability Distributions</li>
+    <li>Show an example using stats (mean, std, histogram, mode)</li>
+    <li>What is Machine Learning?</li>
+    <li>Machine Learning is just fancy statistics?</li>
+    <li>Types of Data</li>
+
+</ul>
+
+<h2 onclick="toggleSection('section2')">2. Types of Machine Learning<span>+</span></h2>
+<ul id="section2">
+  <li>Unsupervised Learning</li>
+  <li>Supervised Learning</li>
+  <li>Semi-Supervised Learning</li>
+  <li>Reinforcement Learning</li>
+</ul>
+
+<h2 onclick="toggleSection('section3')">3. Python Basics<span>+</span></h2>
+<ul id="section3">
+  <li>Data Types</li>
+  <li>For Loops</li>
+  <li>If Conditions</li>
+  <li>Imports and Packages</li>
+  <li>Directory Navigation (os Module)</li>
+  <li>Data Structures
+    <ul>
+      <li>Lists and List Comprehension</li>
+      <li>Dictionaries and Dictionary Comprehension</li>
+      <li>Sets</li>
+      <li>NumPy Arrays and Operations</li>
+      <li>Indexing</li>
+    </ul>
+  </li>
+  <li>Functions and Return Statement</li>
+  <li>Utility Functions
+    <ul>
+      <li>Lambda Function</li>
+      <li>Map()</li>
+      <li>Filter()</li>
+      <li>Len()</li>
+      <li>Sorted() and list.sort()</li>
+      <li>Reversed()</li>
+      <li>Enumerate()</li>
+      <li>Zip()</li>
+      <li>Datetime Module</li>
+      <li>Random Module</li>
+      <li>Math Module</li>
+      <li>Pickle</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 onclick="toggleSection('section4')">4. Pandas <span>+</span></h2>
+<ul id="section4">
+  <li>What is a DataFrame?</li>
+  <li>Data Readers</li>
+  <li>Pandas Functions
+    <ul>
+      <li>Df.head()</li>
+      <li>Df.tail()</li>
+      <li>Df.info()</li>
+      <li>Df.describe()</li>
+      <li>Df.shape</li>
+      <li>Df.columns</li>
+      <li>Df.loc[]</li>
+      <li>Df.iloc[]</li>
+      <li>Df.groupby()</li>
+      <li>Df.sort_values()</li>
+      <li>Df.drop()</li>
+      <li>Df.dropna()</li>
+      <li>Df.fillna()</li>
+    </ul>
+  </li>
+  <li>Export to Files</li>
+  <li>Plotting DataFrames</li>
+</ul>
+
+<h2 onclick="toggleSection('section5')">5. Visualization with Python<span>+</span></h2>
+<ul id="section5">
+  <li>Types of Plots
+    <ul>
+      <li>Bar Plot</li>
+      <li>Line Plot</li>
+      <li>Scatter Plot</li>
+      <li>Histograms</li>
+      <li>Distributions</li>
+      <li>Box Plot</li>
+    </ul>
+  </li>
+  <li>Libraries
+    <ul>
+      <li>Matplotlib</li>
+      <li>Plotly</li>
+      <li>Seaborn</li>
+      <li>Altair</li>
+    </ul>
+  </li>
+  <li>Finding Patterns in Plots Visualization is a straightforward tool to spot patterns in data</li>
+</ul>
+
+<h2 onclick="toggleSection('section6')">6. Machine Learning<span>+</span></h2>
+<ul id="section6">
+  <li>Why We Need It? How It's Just Fancy Statistics?</li>
+  <li>Building on the Material Delivered Earlier, Start with ML Models
+    <ul>
+      <li>Unsupervised
+        <ul>
+          <li>K-means Clustering</li>
+          <li>Hierarchical Clustering</li>
+          <li>DBSCAN</li>
+        </ul>
+      </li>
+      <li>Supervised
+        <ul>
+          <li>Regression
+            <ul>
+              <li>MSE (Mean Squared Error)</li>
+              <li>MAE (Mean Absolute Error)</li>
+            </ul>
+          </li>
+          <li>Classification
+            <ul>
+              <li>Logistic Regression</li>
+              <li>Decision Trees</li>
+              <li>Random Forest</li>
+              <li>K-nearest Neighbors</li>
+              <li>Support Vector Machines</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Loss Functions
+        <ul>
+          <li>Regression</li>
+          <li>Classification
+            <ul>
+              <li>Binary Cross-Entropy Loss</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Metrics
+        <ul>
+          <li>Regression</li>
+          <li>Classification</li>
+        </ul>
+      </li>
+      <li>Clustering
+        <ul>
+          <li>Silhouette Score</li>
+          <li>Calinski-Harabasz Index</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 onclick="toggleSection('section7')">7. Feature Engineering<span>+</span></h2>
+<ul id="section7">
+  <li>Feature Crossing: Describe feature engineering techniques, starting with feature crossing to create new features by combining existing ones.</li>
+  <li>Dimensionality Reduction: Explain dimensionality reduction techniques like PCA (Principal Component Analysis) and when to use them.</li>
+  <li>Feature Importance and Selection: Discuss methods for assessing feature importance and selecting the most relevant features for modeling.</li>
+</ul>
+
+<h2 onclick="toggleSection('section8')">8. ML and Data Processing Pipelines<span>+</span></h2>
+<ul id="section8">
+  <li>Collection: Explain data collection methods, both manual and automated, and the importance of clean data.</li>
+  <li>Cleaning: Discuss data cleaning techniques to handle missing values, outliers, and errors.</li>
+  <li>Preprocessing: Cover preprocessing steps such as normalization and scaling.</li>
+  <li>Train-Test Split: Explain the importance of splitting data into training and testing sets for model evaluation.</li>
+  <li>Model Training and Evaluation: Describe the process of model training, hyperparameter tuning, and model evaluation using the metrics mentioned earlier.</li>
+  <li>Deployment: Highlight the deployment phase, where models are put into production for real-world use.</li>
+</ul>
+
+<h2 onclick="toggleSection('section9')">9. Deep Learning<span>+</span></h2>
+<ul id="section9">
+  <li>Feed Forward Networks: Introduce neural networks, gradient descent, backpropagation, activation functions, and hyperparameters.</li>
+  <li>RNNs and CNNs: Explain recurrent neural networks (RNNs) for text sequences, tokenization, embeddings, and convolutional neural networks (CNNs) for image analysis.</li>
+</ul>
+
+<h2 onclick="toggleSection('section10')">10. Tools<span>+</span></h2>
+<ul id="section10">
+  <li>Keras and TensorFlow: Introduce Keras and TensorFlow for building and training deep learning models.</li>
+</ul>
+
+<h2 onclick="toggleSection('section11')">11.Neural Networks Applications<span>+</span></h2>
+<ul id="section11">
+  <li>Tabular Example: Provide an example of solving a tabular data problem using machine learning.</li>
+  <li>Sentiment Analysis: Explain sentiment analysis as an application of NLP (Natural Language Processing).</li>
+  <li>Image Classification: Discuss image classification using deep learning models like CNNs.</li>
+  <li>Auto-Encoders for anomaly detection</li>
+</ul>
+
+
+
+<h2 onclick="toggleSection('section12')">12. Transfer Learning<span>+</span></h2>
+<ul id="section12">
+  <li>Keras Applications and Pretrained Models: Explain how to leverage pretrained deep learning models for various tasks using Keras applications.</li>
+</ul>
+
+<h2 onclick="toggleSection('section13')">13. Power BI, Tableau, PySpark, SQL <span>+</span></h2>
+<ul id="section13">
+  <li>Power BI and Tableau: Describe these tools as powerful data visualization and business intelligence platforms. Explain how to create interactive dashboards and reports.</li>
+  <li>PySpark: Discuss PySpark for big data processing, including data manipulation and machine learning on large datasets.</li>
+  <li>SQL: Emphasize SQL skills for data retrieval and manipulation from relational databases.</li>
+  <li>KNIME</li>
+  <li>Dataiku</li>
+  <li>Azure DataBricks</li>
+
+</ul>
+
+
+</body>
+</html>

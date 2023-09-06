@@ -1,0 +1,109 @@
+first lesson
+
+review the syllabus
+
+start with guessing game
+explain that data science and machine learning is all about pattern recognition
+talk a little about types of data and what patterns can be found in them
+explain that all data is numbers at the end, at least for the machine
+eplain in detail what patterns can be found in all types of data and give axamples on tabular, text, images, and audio
+
+explain what is probability and distributions
+coin and dice example
+then build up to how machine learning is trying the predict the probability of the target variable Y given the input X
+
+explain the basic stats like mean std mode and variance and how they are the most basic patterns you can find in any data set and they are general prediction about the data calculated given the input
+
+how does a machine learn? you expose it to past experience and it extraxts patterns from that experience
+
+talk about all types of machine learning
+supervised:  machine learning where an algorithm learns from labeled training data to make predictions
+and finds a relationship between the input variables and the target variable
+training data , input features, target vairable
+examples:
+image classifications
+spam email detection
+predicting house prices
+
+unsupervised :Unsupervised learning is a type of machine learning where the
+algorithm is trained on a dataset without explicit supervision in the form
+of labeled output data. In unsupervised learning, the goal is typically to
+find patterns, structures, or relationships within the input data itself
+
+it give a general understanding of the relationship between the input variables
+its does not priduce labels that gien an input the output will be a specfic value
+but it says that the input has similar features to othe data points in the same group
+
+types of prblems you solve with unsupervised learning:
+Clustering
+Dimensionality Reduction
+Anomaly Detection
+Topic Modeling
+
+examples:
+1. K-Means Clustering for Customer Segmentation:
+
+Imagine you work for a retail company, and you have a dataset of customer purchase histories. Each row in the dataset represents a customer, and the columns represent various features such as:
+
+Total amount spent
+Number of items purchased
+Frequency of visits to the store
+Average purchase amount
+etc.
+The goal is to segment these customers into distinct groups based on their purchasing behavior without any predefined categories or labels.
+
+2. Document Clustering for Topic Modeling:
+
+Imagine you have a large collection of text documents, such as news articles or customer reviews,
+and you want to uncover the underlying topics present in the text data.
+This is a common application of unsupervised learning,
+particularly Latent Dirichlet Allocation (LDA).
+
+3. Credit Card Fraud Detection:
+
+In the financial industry, credit card fraud is a significant concern.
+Unsupervised learning techniques can be employed to identify fraudulent
+transactions without the need for labeled examples of fraud.
+
+
+Semi-supervised learning is a machine learning paradigm
+that combines elements of both supervised and unsupervised learning.
+In semi-supervised learning, a model is trained on a dataset
+that contains both labeled and unlabeled examples.
+This approach is particularly useful in situations
+where obtaining a fully labeled dataset is costly or time-consuming,
+but there is some limited labeled data available.
+
+train a supervised model in the labeld data
+make prediction for the unlabeld data
+take the most confident predictions
+add them to labeled dataset
+train the model again on the new set
+and repeat
+
+
+
+##
+Reinforcement Learning (RL) is a type of machine learning where an agent learns to make decisions by interacting with an environment. The agent takes actions to maximize a cumulative reward signal over time. It is a powerful approach used in various applications, including robotics, game playing, recommendation systems, and autonomous vehicles. Here are the key components and concepts of reinforcement learning:
+
+Agent: The agent is the learner or decision-maker that interacts with the environment. It takes actions based on its current state and seeks to maximize its long-term reward.
+
+Environment: The environment is the external system or process with which the agent interacts. It is the context in which the agent operates and where it receives feedback in the form of rewards.
+
+State (S): The state represents the current situation or configuration of the environment, which the agent observes. The state is essential for the agent to make informed decisions.
+
+Action (A): Actions are the choices or decisions that the agent can take at each time step. The set of possible actions depends on the specific problem.
+
+Policy (π): The poli/cy is a strategy that defines the agent's behavior, specifying which action to take in a given state. The goal of RL is often to learn an optimal policy that maximizes the expected cumulative reward.
+
+Reward (R): The reward is a scalar signal that the agent receives from the environment after taking an action in a particular state. It indicates the immediate benefit or cost of the action.
+
+Cumulative Reward (Return): The cumulative reward, also known as the return, is the sum of rewards obtained by the agent over a sequence of time steps. The agent aims to maximize the expected cumulative reward.
+
+Value Function (V): The value function estimates the expected cumulative reward that an agent can obtain starting from a particular state and following a policy. It helps the agent make decisions by assessing the desirability of states.
+
+Q-Function (Q): The Q-function estimates the expected cumulative reward of taking a particular action in a given state and following a policy. It is closely related to the value function and helps the agent select actions.
+
+Exploration vs. Exploitation: RL agents face a trade-off between exploration (trying new actions to learn more about the environment) and exploitation (choosing actions that are expected to yield the highest immediate rewards).
+
+Learning Algorithms: RL uses various learning algorithms to update the agent's policy, value function, or Q-function based on observed experiences (state, action, reward) to improve decision-making.

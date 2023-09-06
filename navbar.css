@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #091E42;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  /* border: 2px solid white; */
+}
+
+.navbar a{
+  color: white;
+
+}
+
+.logo-img{
+  /* border: 1px solid; */
+  /* height: ; */
+}
+.logo-and-name{
+  color: var(--label-color);
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  gap: 5px;
+  /* border-bottom: 3px solid; */
+  padding: 5px 20px;
+  /* border-bottom-left-radius: 2pc; */
+  /* border-bottom-right-radius: 2pc; */
+  cursor: pointer;
+  /* margin-bottom: 15px; */
+}
+
+.logo-and-name > *{
+  cursor: pointer;
+}
+
+.nav-items-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* padding-top: 5px; */
+}
+
+.profile-label-contianer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+}
+
+.menu-button{
+  background-color: transparent;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+.menu-button:active{
+  background-color: rgba(50, 149, 116, 0.57);
+}
+
+/* @media (max-width:800px) {
+  .nav-items-container, .profile-label-contianer{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+
+} */

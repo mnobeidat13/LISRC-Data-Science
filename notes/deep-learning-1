@@ -1,0 +1,7 @@
+review linear and logistic regression
+talk about how its not enough to catch all information in the data
+talk about single neuron perceptrone and how its a linear regression model
+talk about how adding more neurons with linear activation adds nothing
+change the activation function
+add more layers to catch more information
+introduce the structre of a neural net
