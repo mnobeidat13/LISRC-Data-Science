@@ -1,5 +1,0 @@
-digraph {
-	DataExposure [label="Data Exposure" color=lightblue shape=box style=filled]
-	PatternExtraction [label="Pattern Extraction" color=lightgreen shape=box style=filled]
-	DataExposure -> PatternExtraction [label="Pattern Extraction Process"]
-}
